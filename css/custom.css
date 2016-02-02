@@ -1,3 +1,8 @@
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
 	font-family: 'Open Sans', sans-serif;
@@ -26,6 +31,11 @@ body
 	display: inline-block;
 }
 
+.li-inline
+{
+	display: inline-block;
+}
+
 .margin-reset
 {
 	margin:0;
@@ -38,6 +48,16 @@ body
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+}
+
+.column-centered
+{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .box-bordered
@@ -55,6 +75,12 @@ body
 .text-centered
 {
 	text-align: center;
+}
+
+.content
+{
+	width: 25%;
+	padding: 10px 30px;
 }
 
 /*PAGE FLOW*/
@@ -127,4 +153,96 @@ body
 #triptych .content-centered
 {
 	margin-bottom: 100px;
+}
+
+#capucas
+{
+	background: url('../images/slideshow-1.jpg') no-repeat center;
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#capucas .content
+{
+	margin-left: 50%;
+}
+
+#wholesale
+{
+	height: 80vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#wholesale div
+{
+	height: 50%;
+	margin: 0 20px;
+
+}
+
+#wholesale img
+{
+	height: 100%;
+}
+
+#subscribe
+{
+	background-color: #EBEBEB;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	height: 20vh;
+}
+
+.textbox-white
+{
+	padding: 15px;
+	width: 250px;
+	border: none;
+}
+
+.btn-black
+{
+	padding: 15px;
+	color: #FFF;
+	background-color: #000;
+	border: none;
+	margin-left: -5px;
+}
+
+#subscribe p
+{
+	font-size: 24px;
+}
+
+#logo img
+{
+	width: 50px;
+	margin: 50px 0;
+}
+
+#menu-footer
+{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	border-bottom: 3px solid #EBEBEB;
+}
+
+#copyright
+{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	font-size: 12px;
 }
