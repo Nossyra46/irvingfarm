@@ -1,0 +1,130 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+/*HANDY CLASSES*/
+
+.text-uppercased
+{
+	text-transform: uppercase;
+}
+
+.list-unstyled
+{
+	list-style-type: none;
+}
+
+.list-inline
+{
+	display: inline-block;
+}
+
+.list-inline>li
+{
+	display: inline-block;
+}
+
+.margin-reset
+{
+	margin:0;
+}
+
+.content-centered
+{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.box-bordered
+{
+	border-top: solid 5px #000;
+	border-bottom: solid 5px #000;
+	background-color: #FFF;
+}
+
+.img-triptych
+{
+	width: 30%;
+}
+
+.text-centered
+{
+	text-align: center;
+}
+
+/*PAGE FLOW*/
+
+#head
+{
+	width: 100%;
+	background: url('../images/home_main_desktop.jpg') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-white
+{
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+	border-radius: 0;
+	border: none;
+}
+
+.chevron-white
+{
+	color: #FFFFFF;
+	font-weight: 300;	
+}
+
+.bar-black
+{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.bar-black .content-centered > p
+{
+	display: inline;
+}
+
+.bar-black li
+{
+	margin-left: 50px;
+}
+
+#menu .content-centered
+{
+	align-items: center;
+	padding: 50px;
+}
+
+#menu img
+{
+	width: 150px;
+}
+
+#triptych
+{
+	background-color: #E1E1E1;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#triptych img
+{
+	width: 100%;
+}
+
+#triptych .content-centered
+{
+	margin-bottom: 100px;
+}
