@@ -16,6 +16,7 @@ body
 	text-transform: uppercase;
 }
 
+
 .list-unstyled
 {
 	list-style-type: none;
@@ -83,6 +84,13 @@ body
 	padding: 10px 30px;
 }
 
+.content a
+{
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+}
+
 /*PAGE FLOW*/
 
 #head
@@ -144,6 +152,7 @@ body
 	background-color: #E1E1E1;
 	display: flex;
 	flex-flow: row nowrap;
+	font-weight: 700;
 }
 
 #triptych img
