@@ -93,6 +93,11 @@ body
 
 /*PAGE FLOW*/
 
+#mobile-nav
+{
+	display: none;
+}
+
 #head
 {
 	width: 100%;
@@ -134,6 +139,11 @@ body
 .bar-black li
 {
 	margin-left: 50px;
+}
+
+#menu
+{
+	min-height: 50px;
 }
 
 #menu .content-centered
@@ -209,7 +219,7 @@ body
 	justify-content: space-between;
 	align-items: center;
 	font-size: 16px;
-	height: 20vh;
+	padding: 30px 0 30px 0;
 }
 
 .textbox-white
@@ -231,6 +241,16 @@ body
 #subscribe p
 {
 	font-size: 24px;
+}
+
+#subscribe .large
+{
+	display: inline;
+}
+
+#subscribe .small
+{
+	display: none;
 }
 
 #logo img
@@ -257,7 +277,145 @@ body
 	font-size: 12px;
 }
 
-@media screen and ()
+@media screen and (max-width: 768px)
 {
-	
+	#mobile-nav
+	{
+		display: block;
+		padding: 5px;
+	}
+
+	#mobile-nav>ul
+	{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 0;
+	}
+
+	#mobile-nav li
+	{
+		margin-left: 0;
+	}
+
+	#mobile-nav #logo
+	{
+		background-color: grey;
+		width: 40px;
+		border-radius: 50px;
+		border: 1px solid silver;
+		padding: 3px;
+	}
+
+	#head
+	{
+		background: url('../images/home_main_mobile.jpg') no-repeat center;
+		background-size: cover;
+		height: 90vh;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container .bar-black
+	{
+		display: none;
+	}
+
+	#menu ul
+	{
+		display: none;
+	}
+
+	#triptych .content-centered
+	{
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-triptych
+	{
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	#capucas .content, #wholesale .content
+	{
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#wholesale
+	{
+		position: relative;
+	}
+
+	#wholesale .content
+	{
+		z-index: 1;
+	}
+
+	#wholesale div:nth-child(2)
+	{
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+
+	#subscribe .content-centered
+	{
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#subscribe .small
+	{
+		display: inline;
+	}
+
+	#subscribe .large
+	{
+		display: none;
+	}
+	#subscribe p
+	{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	#subscribe form
+	{
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	footer>.column-centered>#logo
+	{
+		display: none;
+	}
+
+	footer #menu-footer
+	{
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: stretch;
+	}
+
+	footer #menu-footer ul
+	{
+		width: 40%;
+		padding-left: 0px;
+	}
+
+	#dropdown
+	{
+		display: none;
+		position: absolute;
+		background-color: #000;
+	}
+
 }
